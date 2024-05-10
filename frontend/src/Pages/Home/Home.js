@@ -15,6 +15,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import BarChartIcon from "@mui/icons-material/BarChart";
 import Analytics from "./Analytics";
+import { backdropClasses } from "@mui/material";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -193,10 +194,11 @@ const Home = () => {
             className="mt-3"
           >
             <div className="filterRow">
-              <div className="text-white">
+              <div className="text">
                 <Form.Group className="mb-3" controlId="formSelectFrequency">
-                  <Form.Label>Select Frequency</Form.Label>
+                  <Form.Label style={{backgroundColor:"transparent",color:"#ffcc00"}}>Select Frequency</Form.Label>
                   <Form.Select
+                  style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                     name="frequency"
                     value={frequency}
                     onChange={handleChangeFrequency}
@@ -211,8 +213,9 @@ const Home = () => {
 
               <div className="text-white type">
                 <Form.Group className="mb-3" controlId="formSelectFrequency">
-                  <Form.Label>Type</Form.Label>
+                  <Form.Label style={{backgroundColor:"transparent",color:"#ffcc00"}}>Type</Form.Label>
                   <Form.Select
+                  style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                     name="type"
                     value={type}
                     onChange={handleSetType}
@@ -224,8 +227,9 @@ const Home = () => {
                 </Form.Group>
               </div>
 
-              <div className="text-white iconBtnBox">
+              <div className="text iconBtnBox" style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}>
                 <FormatListBulletedIcon
+                style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                   sx={{ cursor: "pointer" }}
                   onClick={handleTableClick}
                   className={`${
@@ -233,6 +237,7 @@ const Home = () => {
                   }`}
                 />
                 <BarChartIcon
+                style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                   sx={{ cursor: "pointer" }}
                   onClick={handleChartClick}
                   className={`${
@@ -242,7 +247,7 @@ const Home = () => {
               </div>
 
               <div>
-                <Button onClick={handleShow} className="addNew">
+                <Button variant="secondary" onClick={handleShow} className="addNew" style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}>
                   Add New
                 </Button>
                 <Button onClick={handleShow} className="mobileBtn">

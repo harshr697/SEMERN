@@ -209,6 +209,7 @@ const Goal = () => {
                 <Form.Group className="mb-3" controlId="formSelectFrequency">
                   <Form.Label>Select Frequency</Form.Label>
                   <Form.Select
+                  style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                     name="frequency"
                     value={frequency}
                     onChange={handleChangeFrequency}
@@ -222,9 +223,10 @@ const Goal = () => {
               </div>
 
               <div className="text-white type">
-                <Form.Group className="mb-3" controlId="formSelectFrequency">
-                  <Form.Label>Goal Type</Form.Label>
+                <Form.Group className="mb-3" controlId="formSelectFrequency" >
+                  <Form.Label >Goal Type</Form.Label>
                   <Form.Select
+                  style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                     name="type"
                     value={type}
                     onChange={handleSetType}
@@ -238,6 +240,7 @@ const Goal = () => {
 
               <div className="text-white iconBtnBox">
                 <FormatListBulletedIcon
+                style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                   sx={{ cursor: "pointer" }}
                   onClick={handleTableClick}
                   className={`${
@@ -245,6 +248,7 @@ const Goal = () => {
                   }`}
                 />
                 <BarChartIcon
+                style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}
                   sx={{ cursor: "pointer" }}
                   onClick={handleChartClick}
                   className={`${
@@ -254,7 +258,7 @@ const Goal = () => {
               </div>
 
               <div>
-                <Button onClick={handleShow} className="addNew">
+                <Button onClick={handleShow} className="addNew" style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}>
                   Add New
                 </Button>
                 <Button onClick={handleShow} className="mobileBtn">

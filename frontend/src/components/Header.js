@@ -105,7 +105,7 @@ const Header = () => {
           }}
         />
         <Navbar className="navbarCSS" collapseOnSelect expand="lg" style={{color:"#ffcc00", position: 'relative', zIndex: "2 !important" }}>
-          <h2 href="/" className='headingClass' >Personal Finance Manager</h2>
+          <h2 href="/" className='headingClass' onClick={()=>{navigate("/")}}>Personal Finance Manager</h2>
          <Navbar.Toggle
             aria-controls="basic-navbar-nav"
             style={{
@@ -114,19 +114,16 @@ const Header = () => {
             }}
           >
           </Navbar.Toggle>
-          <Navbar.Collapse id="responsive-navbar-nav">
+          <Navbar.Collapse id="responsive-navbar-nav" >
           <Nav className="mr-auto">
-            <Nav.Item className="ml-2">
-              <Button variant="string" onClick={() => navigate("/bank")}>Accounts</Button>
+            <Nav.Item className="ml-2" >
+              <Button style={{backgroundColor:"transparent",color:"#ffcc00"}} variant="string" onClick={() => navigate("/bank")}>Accounts</Button>
             </Nav.Item>
             <Nav.Item className="ml-2">
-              <Button variant='string' onClick={() => navigate("/goal")}>Goals</Button>
+              <Button variant='string' style={{backgroundColor:"transparent",color:"#ffcc00"}} onClick={() => navigate("/goal")}>Goals</Button>
             </Nav.Item>
             <Nav.Item className="ml-2">
-              <Button variant='string'>Bills</Button>
-            </Nav.Item>
-            <Nav.Item className="ml-2">
-              <Button variant="string" onClick={handleShowLogout} className="ml-2">Logout</Button>
+              <Button variant="string" style={{backgroundColor:"transparent",color:"#ffcc00"}} onClick={handleShowLogout} className="ml-2">Logout</Button>
             </Nav.Item>
             </Nav>
           </Navbar.Collapse>

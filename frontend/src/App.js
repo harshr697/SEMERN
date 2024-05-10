@@ -9,7 +9,7 @@ import Goal from "./Pages/Goal/Goal"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/Home/Home';
 import SetAvatar from './Pages/Avatar/setAvatar';
-
+import Landing from "./Pages/Landing/Landing"
 
 
 const App = () => {
@@ -20,6 +20,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/welcome" element={<Landing />} />
           <Route path="/register" element={<Register />} />
           <Route path="/setAvatar" element={<SetAvatar />} />
           <Route path="/bank" element={<BankAcc />} />

@@ -186,7 +186,7 @@ const BankAcc = () => {
               
               
               <div>
-                <Button onClick={handleShow} className="addNew">
+                <Button onClick={handleShow} className="addNew" style={{backgroundColor:"transparent",color:"#ffcc00",border: "2px solid white"}}>
                   Add New
                 </Button>
                 <Button onClick={handleShow} className="mobileBtn">

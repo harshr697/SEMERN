@@ -5,13 +5,17 @@
     padding: 20px;
 
 }
+.mb-3{
+    background-color: transparent;
+}
 
 .data-table {
     border-collapse: collapse;
   }
   
 .data-table thead th {
-    background-color: #f5f5f5;
+    background-color: grey;
+    color: #ffcc00;
 }
 
 .icons-handle{
